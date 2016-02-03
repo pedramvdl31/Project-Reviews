@@ -1,253 +1,689 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 
-<head>
-
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Outline &mdash; A Free HTML5 Responsive Template by FREEHTML5.CO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/ubu-favicon.png">
+    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+    <meta name="author" content="FREEHTML5.CO" />
 
-    <title>UBU Today</title>
+    <!-- 
+    //////////////////////////////////////////////////////
 
+    FREE HTML5 TEMPLATE 
+    DESIGNED & DEVELOPED by FREEHTML5.CO
+        
+    Website:        http://freehtml5.co/
+    Email:          info@freehtml5.co
+    Twitter:        http://twitter.com/fh5co
+    Facebook:       https://www.facebook.com/fh5co
+
+    //////////////////////////////////////////////////////
+     -->
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Webfonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-    <!-- sub menu -->
-    <link rel="stylesheet" href="/packages/bootstrap-submenu/dist/css/bootstrap-submenu.min.css">
-    <!-- Custom CSS -->
-    <link href="/assets/css/pages/website_pages/landing-page.css" rel="stylesheet">
-
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    @yield('stylesheets')
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="/assets/css/layouts/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="/assets/css/layouts/icomoon.css">
+    <!-- Simple Line Icons-->
+    <link rel="stylesheet" href="/assets/css/layouts/simple-line-icons.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="/assets/css/layouts/magnific-popup.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/assets/css/layouts/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/layouts/owl.theme.default.min.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="/assets/css/layouts/style.css">
+    <!-- Modernizr JS -->
+    <script src="/assets/js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 
-</head>
-
-<body 
-@if(!isset($is_home))
- style="background-color:black" 
-@endif
-
->
-    @if(isset($is_home))
-      @if($is_home==1)
-        <div id="audio-container"> 
-          <audio autoplay id="intro-song">
-            <source src="/assets/music/intro_song.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-      @endif
-    @endif
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img id="pen-logo" class="pull-left" src="/assets/images/brand_image/perm/main-logo.jpg" style="width: 33px;margin-right:9px;">
-                <a class="navbar-brand topnav" href="/">UBU Today</a>
-                @if(isset($is_home))
-                  @if($is_home==1)
-                        <a style="line-height:49px" id="mute-btn" class="sound-btns"> <img class="sound-btns-img" src="/assets/images/icons/mute-icon.png" width="19px" ></a>
-                        <a style="line-height:49px" id="sound-btn"  class="hide sound-btns"> <img class="sound-btns-img" src="/assets/images/icons/sound-icon.png" width="19px" ></a>
-                  @endif
-                @endif
-
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="true">
-                          About<span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu">
-                              <li><a tabindex="0" href="{!!route('get_jo_page')!!}">Jo Morris (Founder)</a></li>
-                              <li><a tabindex="0" target="_blank" href="http://wendyjomorrison.com/">Jo Morris Bio</a></li>
-                              <li><a tabindex="0" href="#contact">Contact</a></li>
-                        </ul>
-                      </li>
-                    <li class="dropdown">
-                        <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="true">
-                          Modalities<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-submenu">
-                            <a tabindex="0">Believe - in - Breath (BBTR)</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="{!!route('get_bbtr_page')!!}" tabindex="0">What is Biodynamic Breath?</a></li>
-                              <li><a href="{!!route('get_giten_page')!!}" tabindex="0">Giten Tonkov (Founder)</a></li>
-                              <li><a href="{!!route('get_bbtr_session_page')!!}" tabindex="0">What to expect in BioDynamic Breath</a></li>
-                              <li><a href="{!!route('get_7_belt')!!}" tabindex="0">7 Belts of Tension</a></li>
-                            </ul>
-                          </li>
-                          <li class="dropdown-submenu">
-                            <a tabindex="0">THERAPEUTIC TOUCH</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="{!!route('get_jean_page')!!}" tabindex="0">Jean Paul Lacroix (Founder)</a></li>
-                              <li><a href="{!!route('get_cocoon_page')!!}" tabindex="0">Cocoon-US Bio</a></li>
-                              <li><a href="{!!route('get_cocoon_modality_page')!!}" tabindex="0">Cocoon Modality</a></li>
-                              <li><a href="{!!route('get_cocoon_massage_page')!!}" tabindex="0">Cocoon Massage</a></li>
-                            </ul>
-                          </li>
-                          <li class="dropdown-submenu">
-                            <a tabindex="0">Sacred Inquiry</a>
-                            <ul class="dropdown-menu">
-                              <li><a target="_blank" href="http://www.sacredinquiry.com/" tabindex="0">sacredinquiry.com</a></li>
-                              <li><a href="{!!route('get_prema_page')!!}" tabindex="0">Prema McKeever</a></li>
-                              <li><a href="" tabindex="0">Awakening to Love Workshops</a></li>
-                              <li><a href="" tabindex="0">Energetic Bodywork Workshops</a></li>
-                              <li><a target="_blank" href="http://www.biodynamicbreath.com/content/7/practitioner-training/" tabindex="0">BBTR Workshops</a></li>
-                              <li><a href="" tabindex="0">Accupressure & Chinese Medicine</a></li>
-                            </ul>
-                          </li>
-                          <li class="dropdown-submenu">
-                            <a tabindex="0">SOUND HEALING</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="" tabindex="0">Tibetan Bowl & Gong Meditations & Retreats</a></li>
-                              <li><a href="" tabindex="0">Marc Handler</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="http://cancercompassalternateroute.com/cancer-5/cancer-cannot-survive-in-an-oxygenated-alkaline-environment/" target="_blank" >Breathwork Science</a></li>
-                        </ul>
-                      </li>
-
-                    <li class="dropdown">
-                        <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="true">
-                          Media<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{!!route('get-videos')!!}" tabindex="0">Videos</a></li>
-                            <li><a tabindex="0" href="{!!route('get_papers')!!}">Newspaper Articles</a></li>
-                            <li><a tabindex="0">Discovery</a></li>
-                            <li><a tabindex="0" href="http://www.livingstondaily.com/story/news/local/community/livingston-county/2015/04/22/beyond/26185459/" target="_blank">Crime Victims Rights Week</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{!!route('get-calendar')!!}">Events</a>
-                    </li>
-                    <li>
-                        <a href="{!!route('get_donation')!!}">Donation</a>
-                    </li>
-                    <li>
-                        <a href="{!!route('get_parole')!!}">Presumtive Parole legislation</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
-    @yield('content')
-
-    <a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="col-md-8  col-sm-12 col-xs-12">
-                <div class="col-lg-6">
-                    <h2>Connect to UBU Today:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://www.facebook.com/ubutoday/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/ubutoday" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/+UBUTODAYCocoonMoiUS/posts" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                        </li>
-                        <li style="margin-top:20px;">
-                            <a href="http://www.meetup.com/UBUTODAY/" class="btn btn-default btn-lg" target="_blank">
-                            <img src="/assets/images/icons/meetup.png" width="20px"> <span class="network-name">MeetUp</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12 col-xs-12" id="send-message-container">
-                    
-                <div class="form-group">
-                    <label for="usr">Send Message:</label>
-                    <input type="text" class="form-control" placeholder="Enter Your Email" id="user_email">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" placeholder="Message" style="width:100%" id="user_message"></textarea>
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary btn-sm pull-right" id="send_message">Send</button>
-                     <img id="email_loading" class="hide" style="float:right;    
-                                margin-top: 4px;
-                                margin-right: 5px;" 
-                        src="/assets/images/icons/gif/loading1.gif" width="20px">
-                </div>
-
-            </div>
-
-        </div>
-        <!-- /.container -->
-
+    </head>
+    <body>
+        
+    <div id="fh5co-offcanvass">
+        <ul>
+            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+            <li><a href="#" data-nav-section="features">Features</a></li>
+            <li><a href="#" data-nav-section="design">Design</a></li>
+            <li><a href="#" data-nav-section="testimonies">Testimonies</a></li>
+            <li><a href="#" data-nav-section="products">Products</a></li>
+            <li><a href="#" data-nav-section="benefits">Benefits</a></li>
+            <li><a href="#" data-nav-section="pricing">Pricing</a></li>
+            <li><a href="#" data-nav-section="faqs">FAQs</a></li>
+        </ul>
+        <h3 class="fh5co-lead">Connect with us</h3>
+        <p class="fh5co-social-icons">
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-instagram"></i></a>
+            <a href="#"><i class="icon-dribbble"></i></a>
+            <a href="#"><i class="icon-youtube"></i></a>
+        </p>
     </div>
-    <!-- /.banner -->
-    <!-- Footer -->
-    <footer>
+    
+    <div id="fh5co-menu" class="navbar">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="{!!route('get-videos')!!}">Media</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="{!!route('get-calendar')!!}">Events</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small" style="color:white">Copyright &copy; <a target="_blank" href="http://www.webprinciples.com/">Webprinciples</a> 2016. All Rights Reserved</p>
+                <div class="col-md-12">
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><span>Menu</span> <i></i></a>
+                    <a href="index.html" class="navbar-brand"><span>Outline</span></a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <!-- Load js libs only when the page is loaded. -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="/packages/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="/packages/Magister3/assets/js/modernizr.custom.72241.js"></script>
-    <script src="/packages/bootstrap-submenu/dist/js/bootstrap-submenu.min.js" defer></script>
-    <script src="/assets/js/pages/website_pages/landing-page.js"></script>
-    @yield('scripts')
+    <div id="fh5co-page">
+        <div id="fh5co-wrap">
+            <header id="fh5co-hero" data-section="home" role="banner" style="background: url(/assets/images/bg_2.jpg) top left; background-size: cover;" >
+                <div class="fh5co-overlay"></div>
+                <div class="fh5co-intro">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-md-6 fh5co-text">
+                                <h2 class="to-animate intro-animate-1">We take your business to the next level.</h2>
+                                <p class="to-animate intro-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                                <p class="to-animate intro-animate-3"><a href="#" class="btn btn-primary btn-md"><i class="icon-apple"></i> See on AppStore</a></p>
+                            </div>
+                            <div class="col-md-6 text-right fh5co-intro-img to-animate intro-animate-4">
+                                <img src="/assets/images/iphone_6_3.png" alt="Outline Free HTML5 Responsive Bootstrap Template">
+                            </div>
 
-</body>
+                        </div>
+                    </div>                      
+                </div>
+            </header>
+            <!-- END .header -->
+            
+            <div id="fh5co-main">
+                <div id="fh5co-clients">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+                                <figure class="fh5co-client"><img src="/assets/images/client_1.png" alt="Free HTML5 Template"></figure>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+                                <figure class="fh5co-client"><img src="/assets/images/client_2.png" alt="Free HTML5 Template"></figure>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+                                <figure class="fh5co-client"><img src="/assets/images/client_3.png" alt="Free HTML5 Template"></figure>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 to-animate">
+                                <figure class="fh5co-client"><img src="/assets/images/client_4.png" alt="Free HTML5 Template"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="fh5co-features" data-section="features">
 
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+                                <h2 class="fh5co-lead to-animate">Explore amazing features</h2>
+                                <p class="fh5co-sub to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                    <h3 class="fh5co-feature-lead">100% Free</h3>
+                                    <p class="fh5co-feature-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                    <h3 class="fh5co-feature-lead">Fully Responsive</h3>
+                                    <p class="fh5co-feature-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-eye"></i></span>
+                                    <h3 class="fh5co-feature-lead">Retina-ready</h3>
+                                    <p class="fh5co-feature-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-cloud-download"></i></span>
+                                    <h3 class="fh5co-feature-lead">Download</h3>
+                                    <p class="fh5co-feature-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+
+                            <div class="clearfix visible-sm-block"></div>
+
+                            <div class="fh5co-spacer fh5co-spacer-sm"></div>
+
+                            <div class="col-md-4 col-md-offset-4 text-center to-animate">
+                                <a href="#" class="btn btn-primary">View All Features</a>
+                            </div>
+                        </div>
+                   </div>
+                   
+
+                </div>
+                
+
+
+                <div id="fh5co-features-2" data-section="design">
+                    <div class="fh5co-features-2-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+                                    <h2 class="fh5co-lead to-animate">Better design</h2>
+                                    <p class="fh5co-sub to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                </div>
+                                <div class="col-md-4 fh5co-text-wrap">
+                                    <div class="row text-center">
+                                        <div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-3">
+                                            <span class="fh5co-icon"><i class="icon-screen-desktop"></i></span>
+                                            <h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        </div>
+                                        <div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-4">
+                                            <span class="fh5co-icon"><i class="icon-anchor"></i></span>
+                                            <h4 class="fh5co-uppercase-sm">Prototyping tools</h4>
+                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-push-4 fh5co-text-wrap">
+                                    <div class="row text-center">
+                                        <div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-5">
+                                            <span class="fh5co-icon"><i class="icon-rocket"></i></span>
+                                            <h4 class="fh5co-uppercase-sm">Powerful design</h4>
+                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        </div>
+                                        <div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-6">
+                                            <span class="fh5co-icon"><i class="icon-people"></i></span>
+                                            <h4 class="fh5co-uppercase-sm">User Collaboration</h4>
+                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-pull-4 fh5co-image animate-object features-2-animate-2">
+                                    <p class="text-center">
+                                    <img src="/assets/images/iphone_blank_2.png" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>  
+
+                </div>
+
+
+                <div id="fh5co-testimony" data-section="testimonies">
+                    <div class="container">
+                        <div class="row animate-box">
+
+                            <div class="owl-carousel">
+
+                                <div class="item">
+                                    <div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+                                        <figure class="fh5co-vcard"><img src="/assets/images/user.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive"></figure>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+                                        <blockquote>
+                                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                                        </blockquote>
+                                        <p class="fh5co-author fh5co-uppercase-sm"><span>Gustav Barrow</span>, XYZ Inc.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+                                        <figure class="fh5co-vcard"><img src="/assets/images/user_2.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive"></figure>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+                                        <blockquote>
+                                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                                        </blockquote>
+                                        <p class="fh5co-author fh5co-uppercase-sm"><span>Gustav Barrow</span>, XYZ Inc.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
+                                        <figure class="fh5co-vcard"><img src="/assets/images/user_3.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive"></figure>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
+                                        <blockquote>
+                                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                                        </blockquote>
+                                        <p class="fh5co-author fh5co-uppercase-sm"><span>Gustav Barrow</span>, XYZ Inc.</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="fh5co-counter" class="fh5co-bg-section" style="background-image: url(/assets/images/bg_1.jpg); background-attachment: fixed;">
+                    <div class="fh5co-overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="fh5co-hero-wrap">
+                                    <div class="fh5co-hero-intro text-center to-animate counter-animate">
+                                        <div class="col-md-4 text-center">
+                                            <span class="fh5co-counter js-counter" data-from="0" data-to="28" data-speed="5000" data-refresh-interval="50"></span>
+                                            <span class="fh5co-counter-label">Customers</span>
+                                            
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <span class="fh5co-counter js-counter" data-from="0" data-to="57" data-speed="5000" data-refresh-interval="50"></span>
+                                            <span class="fh5co-counter-label">Completed Apps</span>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <span class="fh5co-counter js-counter" data-from="0" data-to="34023" data-speed="5000" data-refresh-interval="50"></span>
+                                            <span class="fh5co-counter-label">Downloads</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="fh5co-products" data-section="products">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+                                <h2 class="fh5co-lead animate-single product-animate-1">Other awesome Apps</h2>
+                                <p class="fh5co-sub animate-single product-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+                        
+
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="/assets/images/product_1.jpg" class="fh5co-figure to-animate image-popup">
+                                    <figure>
+                                        <img src="/assets/images/product_1.jpg" alt="Free HTML5 Responsive Template" class="img-responsive">
+                                    </figure>
+                                    <h3 class="fh5co-figure-lead">Product Name</h3>
+                                    <p class="fh5co-figure-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="/assets/images/product_2.jpg" class="fh5co-figure to-animate image-popup">
+                                    <figure>
+                                        <img src="/assets/images/product_2.jpg" alt="Free HTML5 Responsive Template" class="img-responsive">
+                                    </figure>
+                                    <h3 class="fh5co-figure-lead">Product Name</h3>
+                                    <p class="fh5co-figure-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="/assets/images/product_3.jpg" class="fh5co-figure to-animate image-popup">
+                                    <figure>
+                                        <img src="/assets/images/product_3.jpg" alt="Free HTML5 Responsive Template" class="img-responsive">
+                                    </figure>
+                                    <h3 class="fh5co-figure-lead">Product Name</h3>
+                                    <p class="fh5co-figure-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="/assets/images/product_4.jpg" class="fh5co-figure to-animate image-popup">
+                                    <figure>
+                                        <img src="/assets/images/product_4.jpg" alt="Free HTML5 Responsive Template" class="img-responsive">
+                                    </figure>
+                                    <h3 class="fh5co-figure-lead">Product Name</h3>
+                                    <p class="fh5co-figure-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+
+                            <div class="clearfix visible-sm-block"></div>
+
+                            <div class="fh5co-spacer fh5co-spacer-sm"></div>
+
+                            <div class="col-md-4 col-md-offset-4 text-center to-animate">
+                                <a href="#" class="btn btn-primary">View All Products</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div id="fh5co-features-3" data-section="benefits">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+                                <h2 class="fh5co-lead animate-single features3-animate-1">Benefits of this App</h2>
+                                <p class="fh5co-sub animate-single features3-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+                                <div class="fh5co-text to-animate">
+                                    <span class="fh5co-icon"><i class="icon-screen-desktop"></i></span>
+                                    <h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+                                <div class="fh5co-text to-animate">
+                                    <span class="fh5co-icon"><i class="icon-graph"></i></span>
+                                    <h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="clearfix visible-sm-block"></div>
+
+                            <div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+                                <div class="fh5co-text to-animate">
+                                    <span class="fh5co-icon"><i class="icon-anchor"></i></span>
+                                    <h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                            </div>  
+
+                            <div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+                                <div class="fh5co-text to-animate">
+                                    <span class="fh5co-icon"><i class="icon-camera"></i></span>
+                                    <h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                            </div>
+
+                            <div class="clearfix visible-sm-block"></div>
+
+                            <div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+                                <div class="fh5co-text to-animate">
+                                    <span class="fh5co-icon"><i class="icon-present"></i></span>
+                                    <h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 text-center fh5co-text-wrap">
+                                <div class="fh5co-text to-animate">
+                                    <span class="fh5co-icon"><i class="icon-energy"></i></span>
+                                    <h4 class="fh5co-uppercase-sm">Cross platform support</h4>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fh5co-bg-section cta" id="fh5co-cta" style="background-image: url(/assets/images/hero_bg.jpg); background-attachment: fixed;">
+                    <div class="fh5co-overlay"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="fh5co-hero-wrap">
+                                    <div class="fh5co-hero-intro text-center">
+                                        <div class="row">
+                                            <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+                                                <h2 class="fh5co-lead to-animate">Try Outline App today!</h2>
+                                                <p class="fh5co-sub to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                                <div class="to-animate"><a href="#" class="btn btn-primary">Get Started!</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="fh5co-pricing" data-section="pricing">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+                                <h2 class="fh5co-lead animate-single pricing-animate-1">Plans built for every one</h2>
+                                <p class="fh5co-sub animate-single pricing-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+
+                            <div class="col-md-3 to-animate">
+                                <a href="#" class="fh5co-figure">
+                                    <span class="fh5co-price">$1<span>/month</span></span>
+                                    <h3 class="fh5co-figure-lead">Starter</h3>
+                                    <p class="fh5co-figure-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 to-animate">
+                                <a href="#" class="fh5co-figure">
+                                    <span class="fh5co-price">$25<span>/month</span></span>
+                                    <h3 class="fh5co-figure-lead">Regular</h3>
+                                    <p class="fh5co-figure-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 to-animate">
+                                <a href="#" class="fh5co-figure active pricing-feature">
+                                    <span class="fh5co-price">$59<span>/month</span></span>
+                                    <h3 class="fh5co-figure-lead">Plus</h3>
+                                    <p class="fh5co-figure-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                            <div class="col-md-3 to-animate">
+                                <a href="#" class="fh5co-figure">
+                                    <span class="fh5co-price">$125<span>/month</span></span>
+                                    <h3 class="fh5co-figure-lead">Enterprise</h3>
+                                    <p class="fh5co-figure-text">Far far away behind the word mountains</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fh5co-faqs"  data-section="faqs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
+                                <h2 class="fh5co-lead animate-single faqs-animate-1">Frequently Ask Questions</h2>
+                                <p class="fh5co-sub animate-single faqs-animate-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="container">
+                        <div class="faq-accordion active to-animate">
+                            <span class="faq-accordion-icon-toggle active"><i class="icon-arrow-down"></i></span>
+                            <h3>What is Outline?</h3>
+                            <div class="faq-body" style="display: block;">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            </div>
+                        </div>
+                        <div class="faq-accordion to-animate">
+                            <span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+                            <h3>Is Outline Free?</h3>
+                            <div class="faq-body">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            </div>
+                        </div>
+                        <div class="faq-accordion to-animate">
+                            <span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+                            <h3>How do I use Outline Features?</h3>
+                            <div class="faq-body">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            </div>
+                        </div>
+                        <div class="faq-accordion to-animate">
+                            <span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+                            <h3>Which version of iOS do your apps support?</h3>
+                            <div class="faq-body">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            </div>
+                        </div>
+                        <div class="faq-accordion to-animate">
+                            <span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+                            <h3>What languages are available?</h3>
+                            <div class="faq-body">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            </div>
+                        </div>
+                        <div class="faq-accordion to-animate">
+                            <span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
+                            <h3>I have technical problem, who do I email?</h3>
+                            <div class="faq-body">
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fh5co-subscribe">
+                    <div class="container">
+                        <div class="row animate-box">
+                            <form action="#" method="post">
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-primary" value="Subscribe">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <footer id="fh5co-footer" style="">
+            <div class="fh5co-overlay"></div>
+            <div class="fh5co-footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-md-push-3">
+                            <h3 class="fh5co-lead">About</h3>
+                            <ul>
+                                <li><a href="#">Tour</a></li>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">New Features</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-md-push-3">
+                            <h3 class="fh5co-lead">Support</h3>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">More Apps</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-md-push-3">
+                            <h3 class="fh5co-lead">More Links</h3>
+                            <ul>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">Frequently Ask Questions</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">More Apps</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-md-pull-9">
+                            <div class="fh5co-footer-logo"><a href="index.html">Outline</a></div>
+                            <p class="fh5co-copyright"><small>&copy; 2015. All Rights Reserved. <br>    by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a></small></p>
+                            <p class="fh5co-social-icons">
+                                <a href="#"><i class="icon-twitter"></i></a>
+                                <a href="#"><i class="icon-facebook"></i></a>
+                                <a href="#"><i class="icon-instagram"></i></a>
+                                <a href="#"><i class="icon-dribbble"></i></a>
+                                <a href="#"><i class="icon-youtube"></i></a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="/assets/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="/assets/js/jquery.waypoints.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <!-- toCount -->
+    <script src="/assets/js/jquery.countTo.js"></script>
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+
+    
+
+    
+    </body>
 </html>
