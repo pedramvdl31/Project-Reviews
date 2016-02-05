@@ -44,64 +44,25 @@ class UsersController extends Controller
     {
         $validator = Validator::make(Input::all(), User::$registration);
         if ($validator->passes()) {
+            $rand_sting = Job::generateRandomString(25);
+            $rand = Request::root().'/verify-email/'.$rand_sting;
+            $mailer_return = Job::VerificationMailer(Input::get('email'),$rand);
+
             $user = new User;
             $user->roles = 5;
-            $user->username = Input::get('username');
-            $user->firstname = Input::get('first_name');
-            $user->lastname = Input::get('last_name');
+            $user->status = 2;
             $user->email = Input::get('email');
-            $user->age = Input::get('age');
-            // $user->country = Input::get('country');
-            // $user->city = Input::get('city');
-            // $user->district_gu = Input::get('district');
-            // $user->area_dong = Input::get('area');
-            // $user->unit = Input::get('unit');
-            // $user->apartment = Input::get('apartment');
-            // $user->phone = str_replace("-","",Input::get('phone'));
-            // $user->zipcode = Input::get('zipcode');
-            // $user->company = (Input::get('company'))?Input::get('company'):null;
+            $user->username = Input::get('email');
+            $user->varification_token = $rand_sting;
             $user->password = Hash::make(Input::get('password')); 
-            // $user->address_array = Input::get('address')?json_encode(Input::get('address')):null; 
-
-
-            //REFORMATE IMAGE NAME
-            if (Input::get('profile-image')) {
-                $imagePath = public_path("assets/images/profile-images/perm/");
-                $now_time = time();
-                $imagename = Input::get('profile-image');
-                $image_ex = explode('.', $imagename);
-                $image_type = $image_ex[1];
-                $new_imagename = $now_time . '-' . $imagename[0];
-                $final_path = preg_replace('#[ -]+#', '-', $new_imagename);
-            }
-
-            $user->profile_image = Input::get('profile-image')?$final_path.'.'.$image_type:'blank_male.png';           
              if($user->save()) { // Save the user and redirect to owners home
-
                 //ASSIGN LEVEL TWO ACL (GUESTS)
                 $new_rule = new RoleUser;
                 $new_rule->role_id = 5;
                 $new_rule->user_id = $user->id;
-
                 if($new_rule->save()) {
-                    if (Input::get('profile-image')) {
-                        if( ! \File::isDirectory($imagePath) ) {
-                            \File::makeDirectory($imagePath, 493, true);
-                        }
-                        if (!is_writable(dirname($imagePath))) {
-                            $status = 401;
-                            return Response::json(array(
-                                "error" => 'Destination Unwritable'
-                                ));
-                        } else {
-                            $oldpath = public_path("assets/images/profile-images/tmp/".Input::get('profile-image'));
-                            $newpath = public_path("assets/images/profile-images/perm/".$final_path.'.'.$image_type);
-                            rename($oldpath, $newpath);
-                        }
-                    }
                     if (Auth::attempt(array('username'=> $user->username, 'password'=>Input::get('password')))) {
                         $redirect = (Session::get('redirect')) ? Session::get('redirect') : null; 
-                        
                         if(isset($redirect)) {
                             Flash::success('You have successfully been registered as '.$user->username.'!');
                             return Redirect::to(Session::get('redirect'));
@@ -533,7 +494,20 @@ public function postUsersAuthCheckReview()
     }
 }
 
-
+public function getEmailVerify($id=null)
+{
+    $user = User::where('varification_token',$id)->first();
+    if (isset($user)) {
+        $user->status = 1;
+        $user->varification_token = 'expired';
+        $user->save();
+        Flash::success('Thank you for verifying your email.');
+    } else {
+        Flash::Error('This link has been expired');
+    }
+    
+    return Redirect::route('home_index');
+}
 
 
 

@@ -19,6 +19,7 @@ Route::group(['middleware' => 'beforeFilter'], function () {
 	Route::post('/reviews/ajax-edit',  ['uses' => 'ReviewsController@postAjaxReviewEdit']);
 	Route::post('/like-us',  ['uses' => 'LikesController@postLikeUs']);
 	Route::post('/send-email',  ['uses' => 'HomeController@postSendEmail']);
+	Route::get('/verify-email/{id}',  ['as'=>'verify_mail', 'uses' => 'UsersController@getEmailVerify']);
 
 	Route::get('/admins',  ['as'=>'admins_index', 'uses' => 'AdminsController@getIndex']);
 	Route::get('/admins-simple',  ['as'=>'simple_admin_index', 'uses' => 'AdminsController@getSimpleIndex']);

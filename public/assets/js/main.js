@@ -32,13 +32,13 @@
 
 	// Single Page Nav
 	var clickMenu = function() {
-		$('a:not([class="external"])').click(function(){
-			var section = $(this).data('nav-section')
-		    $('html, body').animate({
-		        scrollTop: $('[data-section="' + section + '"]').offset().top
-		    }, 500);
-		    return false;
-		});
+		// $('a:not([class="external"])').click(function(){
+		// 	var section = $(this).data('nav-section')
+		//     $('html, body').animate({
+		//         scrollTop: $('[data-section="' + section + '"]').offset().top
+		//     }, 500);
+		//     return false;
+		// });
 	};
 
 	// Owl Carousel
@@ -151,40 +151,40 @@
 
 	// Click outside of offcanvass
 	var mobileMenuOutsideClick = function() {
-		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvass, .js-fh5co-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	    	if ( $('#fh5co-offcanvass').hasClass('fh5co-awake') ) {
-	    		$('#fh5co-offcanvass').removeClass('fh5co-awake');
-	    		$('#fh5co-page, #fh5co-menu').removeClass('fh5co-sleep');
+		// $(document).click(function (e) {
+	 //    var container = $("#fh5co-offcanvass, .js-fh5co-nav-toggle");
+	 //    if (!container.is(e.target) && container.has(e.target).length === 0) {
+	 //    	if ( $('#fh5co-offcanvass').hasClass('fh5co-awake') ) {
+	 //    		$('#fh5co-offcanvass').removeClass('fh5co-awake');
+	 //    		$('#fh5co-page, #fh5co-menu').removeClass('fh5co-sleep');
 
-	    		$('.js-fh5co-nav-toggle').removeClass('active');
-	    	}
-	    }
-		});
+	 //    		$('.js-fh5co-nav-toggle').removeClass('active');
+	 //    	}
+	 //    }
+		// });
 
-		$(window).scroll(function(){
-			var $menu = $('#fh5co-menu');
-			if ( $(window).scrollTop() > 150 ) {
-				$menu.addClass('sleep');
-			}
+		// $(window).scroll(function(){
+		// 	var $menu = $('#fh5co-menu');
+		// 	if ( $(window).scrollTop() > 150 ) {
+		// 		$menu.addClass('sleep');
+		// 	}
 
-			if ( $(window).scrollTop() < 500 ) {
-				$menu.removeClass('sleep');
-				$('#fh5co-offcanvass ul li').removeClass('active');
-				$('#fh5co-offcanvass ul li').first().addClass('active');
-			}
+		// 	if ( $(window).scrollTop() < 500 ) {
+		// 		$menu.removeClass('sleep');
+		// 		$('#fh5co-offcanvass ul li').removeClass('active');
+		// 		$('#fh5co-offcanvass ul li').first().addClass('active');
+		// 	}
 		
 
-			if ( $(window).scrollTop() > 500 ) {
-				if ( $('#fh5co-offcanvass').hasClass('fh5co-awake') ) {
-		    		$('#fh5co-offcanvass').removeClass('fh5co-awake');
-		    		$('#fh5co-page, #fh5co-menu').removeClass('fh5co-sleep');
+		// 	if ( $(window).scrollTop() > 500 ) {
+		// 		if ( $('#fh5co-offcanvass').hasClass('fh5co-awake') ) {
+		//     		$('#fh5co-offcanvass').removeClass('fh5co-awake');
+		//     		$('#fh5co-page, #fh5co-menu').removeClass('fh5co-sleep');
 
-		    		$('.js-fh5co-nav-toggle').removeClass('active');
-		    	}
-	    	}
-		});
+		//     		$('.js-fh5co-nav-toggle').removeClass('active');
+		//     	}
+	 //    	}
+		// });
 	};
 
 	// Magnific Popup

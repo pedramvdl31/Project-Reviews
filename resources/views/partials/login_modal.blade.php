@@ -12,7 +12,7 @@
 	        <div class="top-content">
 	        	
 	            <div class="inner-bg">
-	                <div class="container">
+	                <div class="container" style="width:100%">
 	                	
 	                    <div class="row">
 	                        <div class="col-sm-5">
@@ -59,11 +59,11 @@
 		                        
 	                        </div>
 	                        
-	                        <div class="col-sm-1 middle-border"></div>
+	                        <div class="col-sm-1 middle-border" style="padding:0"></div>
 	                        <div class="col-sm-1"></div>
 	                        	
 	                        <div class="col-sm-5">
-	                        	
+	                        	{!! Form::open(array('action' => 'UsersController@postRegistration','id'=>'reg-form', 'class'=>'','role'=>"form")) !!}
 	                        	<div class="form-box">
 	                        		<div class="form-top">
 		                        		<div class="form-top-left">
@@ -75,22 +75,22 @@
 		                        		</div>
 		                            </div>
 		                            <div class="form-bottom">
-					                    <form role="form" action="" method="post" class="registration-form">
 					                        <div class="form-group">
-					                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+					                        	<input type="text" placeholder="Email..." class="form-email form-control" id="email" name="email">
+					                        	<span class="error-feedback email-error-feedback hide">Not Matched</span>
 					                        </div>
 					                        <div class="form-group">
-					                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+					                        	<input type="password" placeholder="Password..." class="form-password form-control password" name="password" id="password">
+					                        	<span class="error-feedback password-error-feedback hide">Not Matched</span>
 					                        </div>
-					                        <div class="form-group has-error">
-					                        	<input type="password" name="password-again" placeholder="Password Again..." class="form-password form-control" id="form-password">
-					                        	<span class="error-feedback">Not Matched</span>
+					                        <div class="form-group">
+					                        	<input type="password" placeholder="Password Again..." class="form-password form-control password_again"  name="password_again" id="password_again">
+					                        	<span class="error-feedback password-again-error-feedback hide">Not Matched</span>
 					                        </div>
-					                        <button type="submit" class="btn">Sign me up!</button>
-					                    </form>
+					                        <a class="btn" id="submit-btn">Sign me up!</a>
 				                    </div>
 	                        	</div>
-	                        	
+	                        	{!! Form::close() !!}
 	                        </div>
 	                    </div>
 	                    

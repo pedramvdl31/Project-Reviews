@@ -8,25 +8,13 @@
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Outline &mdash; A Free HTML5 Responsive Template by FREEHTML5.CO</title>
+    <title>ProjectReview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
     <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
     <meta name="author" content="FREEHTML5.CO" />
 
-    <!-- 
-    //////////////////////////////////////////////////////
 
-    FREE HTML5 TEMPLATE 
-    DESIGNED & DEVELOPED by FREEHTML5.CO
-        
-    Website:        http://freehtml5.co/
-    Email:          info@freehtml5.co
-    Twitter:        http://twitter.com/fh5co
-    Facebook:       https://www.facebook.com/fh5co
-
-    //////////////////////////////////////////////////////
-     -->
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content=""/>
@@ -84,10 +72,9 @@
         <ul>
             <li class="active"><a href="#" data-nav-section="home">Home</a></li>
             @if(Auth::check())
-                <li><a class="logout-btn clickables-a">Log Out</a></li>
+                <li><a href="{!!route('users_logout')!!}" class="logout-btn clickables-a">Log Out</a></li>
             @else
-                <li><a class="login-btn clickables-a">Log In</a></li>
-                <li><a>Sign Up</a></li>
+                <li><a class="login-btn clickables-a">Log In or Sign Up</a></li>
             @endif
         </ul>
         <h3 class="fh5co-lead">Connect with us</h3>
@@ -110,7 +97,13 @@
             </div>
         </div>
     </div>
-
+    <div class="flashmessage" style="margin:50px 0 0 0;position: absolute;
+    top: -51px;
+    width: 100%;
+    z-index: 999999;">
+        <style type="text/css">.alert-success,.alert-danger{margin: 0;}</style>
+          @include('flash::message')
+    </div>
     <div id="fh5co-page">
         <div id="fh5co-wrap">
             <header id="fh5co-hero" data-section="home" role="banner" style="background: url(/assets/images/bg_2.jpg) top left; background-size: cover;" >

@@ -46,8 +46,7 @@ input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-i
 textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
 
 
-
-button.btn {
+button.btn, a#submit-btn {
 	height: 50px;
     margin: 0;
     padding: 0 20px;
