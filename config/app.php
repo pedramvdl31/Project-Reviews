@@ -138,6 +138,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -201,8 +202,7 @@ return [
         'Flash'     => 'Laracasts\Flash\Flash',
         'UploadHelper'=> App\Helpers\UploadHelper::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
-
-
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class
     ],
 
 ];

@@ -17,15 +17,9 @@
 	// OffCanvass
 	var offCanvass = function() {
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
-
 			var $this = $(this);
-
 			$('#fh5co-offcanvass').toggleClass('fh5co-awake');
 			$('#fh5co-page, #fh5co-menu').toggleClass('fh5co-sleep');
-
-
-
-
 			if ( $('#fh5co-offcanvass').hasClass('fh5co-awake') ) {
 				$this.addClass('active');
 			} else {

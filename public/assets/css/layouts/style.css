@@ -60,6 +60,10 @@ a {
   background-color: transparent;
 }
 
+.clickables-a{
+  cursor: pointer;
+}
+
 a:active,
 a:hover {
   outline: 0;
@@ -1454,9 +1458,7 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -6417,10 +6419,10 @@ button.close {
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0s ease-out;
+  -moz-transition: -moz-transform 0s ease-out;
+  -o-transition: -o-transform 0s ease-out;
+  transition: transform 0s ease-out;
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -7389,9 +7391,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 999;
   width: 100%;
   padding-bottom: 20px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -7426,9 +7425,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-page {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+
   float: left;
   background: #fff;
   width: 100%;
@@ -7457,9 +7454,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 90;
   top: 0;
   right: 0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+
   -webkit-transform: translateX(290px);
   -moz-transform: translateX(290px);
   -ms-transform: translateX(290px);
