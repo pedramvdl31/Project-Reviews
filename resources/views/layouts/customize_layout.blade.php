@@ -10,9 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ProjectReview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-    <meta name="author" content="FREEHTML5.CO" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
 
 
 
@@ -106,23 +106,56 @@
     </div>
     <div id="fh5co-page">
         <div id="fh5co-wrap">
-            <header id="fh5co-hero" data-section="home" role="banner" style="background: url(/assets/images/bg_2.jpg) top left; background-size: cover;" >
+            <header id="fh5co-hero" data-section="home" role="banner" style="" >
                 <div class="fh5co-overlay"></div>
-                <div class="fh5co-intro">
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-md-6 fh5co-text">
-                                <h2 class="to-animate intro-animate-1">We take your business to the next level.</h2>
-                                <p class="to-animate intro-animate-2">Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
-                                <p class="to-animate intro-animate-3"><a href="#" class="btn btn-primary btn-md"><i class="icon-apple"></i> See on AppStore</a></p>
+                <div id="fh5co-features-2" data-section="design">
+                    <div class="fh5co-features-2-content">
+                        <div class="container">
+                            <div class="row">
+                            <style type="text/css">
+                                .search-cats{
+                                    height: 200px;
+                                }
+                            </style>
+                                <div class="col-md-4 fh5co-text-wrap">
+                                    <div class="row text-center">
+                                        <div class="search-cats col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-3">
+                                            <span class="fh5co-icon"><i class="icon-screen-desktop"></i></span>
+                                            <h4 class="fh5co-uppercase-sm">Search By Location</h4>
+                                            <p></p>
+                                        </div>
+                                        <div class="search-cats col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-4">
+                                            <span class="fh5co-icon"><i class="icon-anchor"></i></span>
+                                            <h4 class="fh5co-uppercase-sm">Search By Product</h4>
+                                            <p></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-push-4 fh5co-text-wrap">
+                                    <div class="row text-center">
+                                        <div class="search-cats col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-5">
+                                            <span class="fh5co-icon"><i class="icon-rocket"></i></span>
+                                            <h4 class="fh5co-uppercase-sm">Search by Brand</h4>
+                                            <p></p>
+                                        </div>
+                                        <div class="search-cats col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-6">
+                                            <span class="fh5co-icon"><i class="icon-people"></i></span>
+                                            <h4 class="fh5co-uppercase-sm">Advance Search</h4>
+                                            <p></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-md-pull-4 fh5co-image animate-object features-2-animate-2">
+                                    <p class="text-center">
+                                    <img src="/assets/images/iphone_blank_2.png" class="" alt="">
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-md-6 text-right fh5co-intro-img to-animate intro-animate-4">
-                                <img src="/assets/images/iphone_6_3.png" alt="Outline Free HTML5 Responsive Bootstrap Template">
-                            </div>
-
                         </div>
-                    </div>                      
+                    </div>  
+
                 </div>
             </header>
             <!-- END .header -->
@@ -152,40 +185,143 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
-                                <h2 class="fh5co-lead to-animate">Explore amazing features</h2>
-                                <p class="fh5co-sub to-animate">Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
+                                <h2 class="fh5co-lead to-animate">Recent Reviews</h2>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
                                 <a href="#" class="fh5co-feature to-animate">
                                     <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
-                                    <h3 class="fh5co-feature-lead">100% Free</h3>
-                                    <p class="fh5co-feature-text">Screen readers will have trouble with your forms.</p>
                                 </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
                                 <a href="#" class="fh5co-feature to-animate">
                                     <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
-                                    <h3 class="fh5co-feature-lead">Fully Responsive</h3>
-                                    <p class="fh5co-feature-text">Far far away behind the word mountains</p>
                                 </a>
                             </div>
                             <div class="clearfix visible-sm-block"></div>
                             <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
                                 <a href="#" class="fh5co-feature to-animate">
-                                    <span class="fh5co-feature-icon"><i class="icon-eye"></i></span>
-                                    <h3 class="fh5co-feature-lead">Retina-ready</h3>
-                                    <p class="fh5co-feature-text">Far far away behind the word mountains</p>
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
                                 </a>
                             </div>
                             <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
                                 <a href="#" class="fh5co-feature to-animate">
-                                    <span class="fh5co-feature-icon"><i class="icon-cloud-download"></i></span>
-                                    <h3 class="fh5co-feature-lead">Download</h3>
-                                    <p class="fh5co-feature-text">Far far away behind the word mountains</p>
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
                                 </a>
                             </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-mustache"></i></span>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                                <a href="#" class="fh5co-feature to-animate">
+                                    <span class="fh5co-feature-icon"><i class="icon-screen-smartphone"></i></span>
+                                </a>
+                            </div>
+                            <div class="clearfix visible-sm-block"></div>
 
-                            <div class="clearfix visible-sm-block"></div>
+
+
 
                             <div class="fh5co-spacer fh5co-spacer-sm"></div>
 
@@ -200,55 +336,6 @@
                 
 
 
-                <div id="fh5co-features-2" data-section="design">
-                    <div class="fh5co-features-2-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
-                                    <h2 class="fh5co-lead to-animate">Better design</h2>
-                                    <p class="fh5co-sub to-animate">Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
-                                </div>
-                                <div class="col-md-4 fh5co-text-wrap">
-                                    <div class="row text-center">
-                                        <div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-3">
-                                            <span class="fh5co-icon"><i class="icon-screen-desktop"></i></span>
-                                            <h4 class="fh5co-uppercase-sm">Cross platform support</h4>
-                                            <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
-                                        </div>
-                                        <div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-4">
-                                            <span class="fh5co-icon"><i class="icon-anchor"></i></span>
-                                            <h4 class="fh5co-uppercase-sm">Prototyping tools</h4>
-                                            <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-md-push-4 fh5co-text-wrap">
-                                    <div class="row text-center">
-                                        <div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-5">
-                                            <span class="fh5co-icon"><i class="icon-rocket"></i></span>
-                                            <h4 class="fh5co-uppercase-sm">Powerful design</h4>
-                                            <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
-                                        </div>
-                                        <div class="col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-6">
-                                            <span class="fh5co-icon"><i class="icon-people"></i></span>
-                                            <h4 class="fh5co-uppercase-sm">User Collaboration</h4>
-                                            <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-md-pull-4 fh5co-image animate-object features-2-animate-2">
-                                    <p class="text-center">
-                                    <img src="/assets/images/iphone_blank_2.png" class="" alt="Outline Free HTML5 Responsive Bootstrap Template">
-                                    </p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>  
-
-                </div>
             </div>
         </div>
 
