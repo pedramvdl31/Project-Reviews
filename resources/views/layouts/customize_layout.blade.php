@@ -153,7 +153,7 @@
                                 </div>
                                 <div class="col-md-4 col-md-pull-4 fh5co-image animate-object features-2-animate-2">
                                     <p class="text-center">
-                                    <img src="/assets/images/iphone_blank_2.png" class="" alt="">
+                                    <img style="max-width: 320px;" src="/assets/images/iphone_blank_2.png" class="" alt="">
                                     </p>
                                 </div>
                             </div>
