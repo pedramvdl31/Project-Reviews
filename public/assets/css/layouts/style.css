@@ -7385,7 +7385,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-menu {
-  background: transparent;
   position: absolute;
   top: 0;
   z-index: 999;
@@ -7395,7 +7394,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   border-radius: 0px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 #fh5co-menu.sleep {
   -webkit-transform: translateY(-100%);
@@ -7568,15 +7567,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-hero {
-  float: left;
-  width: 100%;
-  position: relative;
-  padding-top: 4em;
-  padding-bottom: 4em;
-  height: 800px;
-  z-index: 10;
-  background: white;
-  overflow: hidden;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    height: 690px;
+    z-index: 10;
+    background: #fafafa;
+    overflow: hidden;
 }
 #fh5co-hero .fh5co-overlay {
   position: absolute;
@@ -7655,7 +7654,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 .navbar-brand {
@@ -7807,10 +7806,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-features,
-#fh5co-features-2,
 #fh5co-features-3,
 #fh5co-products,
 #fh5co-faqs {
+  position: relative;
+  padding: 3em 0;
+}
+#fh5co-features-2{
   position: relative;
   padding: 7em 0;
 }
@@ -7831,7 +7833,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-features-2 {
-  background: #fff;
+  background: #fafafa;
 }
 
 #fh5co-features-3 .fh5co-text-wrap {
@@ -8054,6 +8056,8 @@ h1, h2, h3, h4, h5, h6 {
   -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+}
+.fh5co-feature-intro:hover{
   margin-top: -10px;
 }
 @media screen and (max-width: 768px) {

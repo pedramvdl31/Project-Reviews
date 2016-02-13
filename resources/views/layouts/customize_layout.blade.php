@@ -56,6 +56,8 @@
     <!-- Modernizr JS -->
     <script src="/assets/js/modernizr-2.6.2.min.js"></script>
 
+    <link rel='stylesheet' href='/packages/typicon/font/typicons.min.css' />
+
     {!! Html::style('/assets/css/login_modal.css') !!}
     {!! Html::style('/assets/css/general.css') !!}
     {!! Html::style('/assets/css/partials/login_modal_style.css') !!}
@@ -120,31 +122,33 @@
                                 <div class="col-md-4 fh5co-text-wrap">
                                     <div class="row text-center">
                                         <div class="search-cats col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-3">
-                                            <span class="fh5co-icon"><i class="icon-screen-desktop"></i></span>
-                                            <h4 class="fh5co-uppercase-sm">Search By Location</h4>
-                                            <p></p>
+                                            <a class="fh5co-feature fh5co-feature-intro to-animate">
+                                                <span class="fh5co-feature-icon"><i class="typcn typcn-location-outline"></i></span>
+                                                <h4 class="fh5co-uppercase-sm">Search By Location</h4>
+                                            </a>
                                         </div>
                                         <div class="search-cats col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-4">
-                                            <span class="fh5co-icon"><i class="icon-anchor"></i></span>
-                                            <h4 class="fh5co-uppercase-sm">Search By Product</h4>
-                                            <p></p>
+                                            <a class="fh5co-feature fh5co-feature-intro to-animate">
+                                                <span class="fh5co-feature-icon"><i class="typcn typcn-tags"></i></span>
+                                                <h4 class="fh5co-uppercase-sm">Search By Brand</h4>
+                                            </a>  
                                         </div>
-                                        
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-md-push-4 fh5co-text-wrap">
                                     <div class="row text-center">
                                         <div class="search-cats col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-5">
-                                            <span class="fh5co-icon"><i class="icon-rocket"></i></span>
-                                            <h4 class="fh5co-uppercase-sm">Search by Brand</h4>
-                                            <p></p>
+                                            <a class="fh5co-feature fh5co-feature-intro to-animate">
+                                                <span class="fh5co-feature-icon"><i class="typcn typcn-sort-alphabetically-outline"></i></span>
+                                                <h4 class="fh5co-uppercase-sm">Search By Product</h4>
+                                            </a>
                                         </div>
                                         <div class="search-cats col-md-12 col-sm-6 col-xs-6 col-xxs-12 fh5co-text animate-object features-2-animate-6">
-                                            <span class="fh5co-icon"><i class="icon-people"></i></span>
-                                            <h4 class="fh5co-uppercase-sm">Advance Search</h4>
-                                            <p></p>
+                                            <a class="fh5co-feature fh5co-feature-intro to-animate">
+                                                <span class="fh5co-feature-icon"><i class="typcn typcn-keyboard"></i></span>
+                                                <h4 class="fh5co-uppercase-sm">More Advance Search</h4>
+                                            </a>                                         
                                         </div>
-                                        
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-md-pull-4 fh5co-image animate-object features-2-animate-2">
